@@ -3,12 +3,12 @@ import { getAuth, type Auth } from 'firebase/auth'
 import { getFirestore, type Firestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || 'YOUR_API_KEY',
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || 'YOUR_PROJECT_ID.firebaseapp.com',
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || 'YOUR_PROJECT_ID',
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || 'YOUR_PROJECT_ID.appspot.com',
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || 'YOUR_SENDER_ID',
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || 'YOUR_APP_ID',
+  apiKey: "AIzaSyBYRRbwtyFyj8zFgbuyc3YI66cc0x2PoH0",
+  authDomain: "pettycash-66974.firebaseapp.com",
+  projectId: "pettycash-66974",
+  storageBucket: "pettycash-66974.firebasestorage.app",
+  messagingSenderId: "1097956389667",
+  appId: "1:1097956389667:web:21f80eb364804e0ff0d296"
 }
 
 const app: FirebaseApp = initializeApp(firebaseConfig)
