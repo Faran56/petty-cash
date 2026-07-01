@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { useAuth } from '@/context/AuthContext'
-import { formatCurrency, formatDate } from '@/utils/format'
+import { useAuth } from '../context/AuthContext'
+import { formatCurrency, formatDate } from '../utils/format'
 import {
   DollarSign, Plus, LogOut, Receipt, TrendingUp, TrendingDown,
   Wallet, Calendar, Tag, X, Search, ArrowUpRight, ArrowDownRight, Clock
