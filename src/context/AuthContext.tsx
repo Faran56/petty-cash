@@ -7,7 +7,7 @@ import {
   updateProfile,
   type User,
 } from 'firebase/auth'
-import { auth } from '@/firebase'
+import { auth } from '../firebase'
 
 interface AuthContextType {
   user: User | null
@@ -20,7 +20,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
-const ADMIN_EMAILS = ['muhammadfaran0@gmail.com']
+const ADMIN_EMAILS = ['admin@example.com']
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
