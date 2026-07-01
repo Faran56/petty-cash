@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { AuthProvider, useAuth } from '@/context/AuthContext'
-import { LoginPage } from '@/pages/LoginPage'
-import { UserDashboard } from '@/pages/UserDashboard'
-import { AdminDashboard } from '@/pages/AdminDashboard'
-import { Toaster } from '@/components/Toaster'
+import { AuthProvider, useAuth } from './context/AuthContext'
+import { LoginPage } from './pages/LoginPage'
+import { UserDashboard } from './pages/UserDashboard'
+import { AdminDashboard } from './pages/AdminDashboard'
+import { Toaster } from './components/Toaster'
 
 function ProtectedRoute({ children, requireAdmin = false }: { children: React.ReactNode; requireAdmin?: boolean }) {
   const { user, loading, isAdmin } = useAuth()
